@@ -2,8 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import HomeView from '../views/HomeView.vue';
 import WeeksView from '../views/WeeksView.vue';
-import Week1 from "../components/weeks/indexes/Week1.vue";
-import Notes1 from "../components/weeks/notes/Notes1.vue";
+import NotesView from "../views/NotesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,13 +13,15 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/week',
+      path: '/week/:nweek',
       name: 'week',
       component: WeeksView,
-      children: [{path: "1", name: "Week1", component: Week1},
-        {path: "1/notes", name: "Week1Notes", component: Notes1},
-      ]
     },
+    {
+      path: "/week/:nweek/notes", 
+      name:"notes", 
+      component:NotesView
+    }
     
   ]
 })

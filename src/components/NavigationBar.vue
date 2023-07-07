@@ -14,9 +14,9 @@
                     </a>
                     <ul class="dropdown-menu" v-bind:style="navStyle">
                         <li>
-                            <router-link class="dropdown-item" 
-                                v-bind:to="{name: 'Week1'}" v-bind:style="navStyle">
-                                Week 1
+                            <router-link class="dropdown-item" v-for="(week, index) in this.$store.state.weeks"
+                                v-bind:to="'/week/'+index" v-bind:style="navStyle">
+                                Week {{ index }}
                             </router-link>
                         </li>
                     </ul>
@@ -35,7 +35,8 @@
                 navStyle: {
                     backgroundColor: "rgb(33,37,41)",
                     color: "white"
-                }
+                },
+                weeks: [1, 2]
             }
         }
     }
