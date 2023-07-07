@@ -15,12 +15,12 @@
                 </RouterLink>
             </li>
             <li>
-                <a v-bind:href="`/weeks/slides/week${$route.params.nweek}.pdf`">
+                <a v-bind:href="`/weeks/slides/week${$route.params.nweek}.pdf`" @click="dowload_file">
                     Slides
                 </a>
             </li>
             <li>
-                <a v-bind:href="`/weeks/source_codes/week${$route.params.nweek}.zip`">
+                <a v-bind:href="`/weeks/source_codes/week${$route.params.nweek}.zip`" @click="dowload_file">
                     Source Code
                 </a>
             </li>
