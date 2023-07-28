@@ -15,3 +15,8 @@
 
     path = "/api/hello"
     function = "hello"
+
+[[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
