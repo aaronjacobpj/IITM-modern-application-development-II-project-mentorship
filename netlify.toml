@@ -8,15 +8,10 @@
     publish = "dist"
 
     # Build file command.
-    command = "npm install && npm run build && cp -r ../weeks dist"
+    command = "npm install && npm run build && cp -r ../weeks dist && echo ls"
 
 
 [[edge_functions]]
 
     path = "/api/hello"
     function = "hello"
-
-[[redirects]]
-    from = "/*"
-    to = "/index.html"
-    status = 200
