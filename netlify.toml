@@ -2,13 +2,13 @@
 [build]
 
     # Srource directory
-    base = "src"
+    base = "."
 
     # Build file directory
     publish = "dist"
 
     # Build file command.
-    command = "npm install && npm run build && cp -r ../weeks dist && echo ls"
+    command = "npm install && vite build && cp -r weeks dist"
 
 
 [[edge_functions]]
