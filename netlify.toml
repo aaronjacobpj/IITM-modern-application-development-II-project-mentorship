@@ -8,7 +8,7 @@
     publish = "dist"
 
     # Build file command.
-    command = "npm install && npm run build && cp -r weeks dist"
+    command = "npm install && npm run build && cp -r ../weeks dist"
 
 
 [[edge_functions]]
