@@ -1,0 +1,17 @@
+# Build command
+[build]
+
+    # Srource directory
+    base = "src"
+
+    # Build file directory
+    publish = "dist"
+
+    # Build file command.
+    command = "npm run build"
+
+
+[[edge_functions]]
+
+    path = "/api/hello"
+    function = "hello"
