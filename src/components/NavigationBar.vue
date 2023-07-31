@@ -13,10 +13,16 @@
                       Weeks
                     </a>
                     <ul class="dropdown-menu" v-bind:style="navStyle">
-                        <li>
-                            <router-link class="dropdown-item" v-for="(week, index) in this.$store.state.weeks"
+                        <li v-for="(week, index) in this.$store.state.weeks">
+                            <router-link class="dropdown-item" 
                                 v-bind:to="'/week/'+index" v-bind:style="navStyle">
                                 Week {{ index }}
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link class="dropdown-item" to="/week/miscellaneous"
+                                v-bind:style="navStyle">
+                                Miscellaneous
                             </router-link>
                         </li>
                     </ul>

@@ -6,7 +6,7 @@ const store = createStore({
             weeks: [{title: "Vue", slides: true, source_codes: true},
                 {title: "Vue Routing, Store, RBAC and Token Authentication", slides: true, source_codes: true},
                 {title: "Backend Jobs and Caching", slides: true, source_codes: true},
-                {title: "Mails and Webhooks", slides: false, source_codes: true}
+                {title: "Mails and Webhooks", slides: false, source_codes: true},
             ]
         }
     }
