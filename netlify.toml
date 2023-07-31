@@ -1,7 +1,7 @@
 # Build command
 [build]
 
-    # Srource directory
+    # Source directory
     base = "."
 
     # Build file directory
